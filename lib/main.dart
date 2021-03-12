@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(MaterialApp(home: App()));
 }
 
 class App extends StatelessWidget {
@@ -61,7 +61,7 @@ class _HoverL2TState extends State<HoverL2T> {
           AnimatedOpacity(
               opacity: !isHovering ? 1.0 : 0.0,
               duration: const Duration(milliseconds: 200),
-              child: Image.asset('black.png')),
+              child: Image.network('https://i.imgur.com/vfoOK26.png')),
         ],
       ),
     );
